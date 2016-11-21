@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adivina el Numero</title>
+  <style>
+  #atun {
+    display: inline-block;
+  }
+  #bugSpray {
+    width: 100%;
+    height: 60px;
+    background-color: maroon;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: white;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Adivina el numero magico
+      (<span id="final"><span id="lives">3</span> intentos</span>)
+    </h2>
+    <p>Paso 1):</p>
+    <p id="atun">Presiona el boton</p>
+    <button id="atun" type="button" onclick="magicNum()">MAGICO</button>
+    <p id="atun">para crear un numero al azar.</p>
+    <p>El mistico numero se encuentra entre el 1 y el 10</p>
+    <br>
+    <p>Paso 2):</p>
+    <p id="atun">Haz click</p>
+    <button id="atun" type="button" onclick="playGate()">AQUI</button>
+    <p id="atun">para ver si tienes poderes mentales.</p>
+    <p id="output"></p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>NOTA: La siguiente secci&oacute;n contiene informaci&oacute;n sobre
+  el funcionamiento interno del juego, y es SOLO para los ojos del programador.</p>
+  <p>No intentes verla o llamaremos a seguridad gatuna!</p>
+  <div id="bugSpray">
+    <p>Test Output</p>
+  </div>
+  <br>
+  <h4>n1 &amp; n2 distance:</h4>
+  <p id="debug0"></p>
+  <br>
+  <h5>User:</h5>
+  <p id="debug1"></p>
+  <br>
+  <h5>Rand:</h5>
+  <p id="debug2"></p>
+  <br>
+  <h5>intentos restantes:</h5>
+  <p id="debug3"></p>
+
+  <script src='adivina.js'></script>
+</body>
+</html>
