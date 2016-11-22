@@ -1,3 +1,6 @@
+/* En caso de no acertar durante un intento, se mide que tan cerca estuvo
+el jugador y se da un hint */
+
 var checkDif = function(n1, n2) {
   diff = n1 - n2;
   if (diff < 0) {
@@ -36,7 +39,7 @@ document.getElementById('debug3').innerHTML = intentos;
 var revisarNum = function() {
   userAnswer = Number(window.prompt('Recuerda: El numero esta entre el 1 y el 10', 'Adivina...'));
   document.getElementById('debug1').innerHTML = userAnswer;
-  if (userAnswer === NaN) {
+  if (isNaN(userAnswer)) {
     document.getElementById('output').innerHTML = 'Lo que pusiste no es un ' +
     'numero valido!';
   }
